@@ -1,8 +1,3 @@
-﻿function maquina(minimo, maximo)
-{
-    var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo );
-    return numero;
-}
 
 var rock = 0;
 var paper = 1;
@@ -13,7 +8,7 @@ var lizard = 4;
 var opciones = ["Rock", "Paper", "Scissors", "Spock", "Lizard"];
 
 var opcionUser;
-var opcionMachine = maquina(0,4);
+var opcionMachine = Math.floor( Math.random() * (4 - 0 + 1) + 0 );
 do{
 opcionUser = prompt("Escoge la opcion \nRock: 0\nPaper: 1\nScissors: 2 \nSpock: 3 \nLizard: 4", 0);
 }while(opcionUser>4)
